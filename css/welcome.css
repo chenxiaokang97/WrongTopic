@@ -1,0 +1,11 @@
+/*body{
+	background: rgba(148,220,212,.8);;
+}*/
+/*.imgcolor{
+	background: rgba(148,220,212,.1);;
+}*/
+.imgcolor .box-img img{
+	margin-top: 50%;
+	margin-left: 33%;
+	max-width: 40%;
+}

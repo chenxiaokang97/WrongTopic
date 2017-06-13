@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="js/mui.min.js"></script>
+		<style type="text/css">
+			.slider{
+				max-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<header class="mui-bar mui-bar-nav bg-color">
+		    <h1 class="mui-title">首页</h1>
+		</header>
+		
+		<div class="mui-content">
+		
+		<div class="mui-slider slider">
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/2.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/1.jpeg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/2.jpeg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/3.png" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="img/4.png" /></a></div>
+		    <!--支持循环，需要重复图片节点-->
+		    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/1.jpeg" /></a></div>
+		  </div>
+		</div>
+		
+			<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/cbd.jpg)">
+					<img src="img/fair.png" />
+					<div class="mui-media-body">
+						小M
+						<p>发表于 2016-06-30 15:30</p>
+					</div>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">页脚</div>
+			</div>
+			
+			<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/cbd.jpg)">
+					<img src="img/fair.png" />
+					<div class="mui-media-body">
+						小M
+						<p>发表于 2016-06-30 15:30</p>
+					</div>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">页脚</div>
+			</div>
+		</div>
+		
+		<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/cbd.jpg)">
+					<img src="img/fair.png" />
+					<div class="mui-media-body">
+						小M
+						<p>发表于 2016-06-30 15:30</p>
+					</div>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">页脚</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+					//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		
+		document.querySelector('.mui-slider').addEventListener('slide', function(event) {
+		  //注意slideNumber是从0开始的；
+//		  alert("你正在看第"+(event.detail.slideNumber+1)+"张图片");
+		});
+//		注意:如果ajax获得图片后，需要在写入图片以后，需要从新调用一下
+		gallery.slider();
+		
+		var self = plus.webview.currentWebview();
+
+		</script>
+	</body>
+</html>

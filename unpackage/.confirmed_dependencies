@@ -1,0 +1,14 @@
+{
+  "welcome.html": {
+    "href": "welcome.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/main.css",
+      "js/mui.min.js",
+      "css/welcome.css",
+      "img/fair.png"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}
